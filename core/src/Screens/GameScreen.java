@@ -46,15 +46,21 @@ public class GameScreen implements Screen
     int barClickX = 520;
     int barClickY = 240;
 
-    mouseControl control;
+    mouseControl control;//includes methods to help decode
+                         //user input, go to the mouseControl
+                         //class for more information.
     ArrayList<String> des1;
 
-
+    //These are the descriptions presented to user
+    //when they hover over the rotating circles
     Dialogue log1;
     Dialogue log2;
     Dialogue log3;
     Dialogue log4;
 
+    //These are the encapsulating methods that hold textures
+    //allowing them to rotate, these are currently holding
+    //the circle textures
     TextureRegion reg;
     TextureRegion centReg;
     TextureRegion barReg;
