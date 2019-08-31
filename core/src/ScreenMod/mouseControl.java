@@ -35,7 +35,7 @@ public class mouseControl
         int myY = Gdx.graphics.getHeight() - Gdx.input.getY();//this step flips mouse Y-val
         //as it is flipped relative to the screen's y-val.
         //Cheching if parameters follow rule:
-        if(x2>x1 || y2>y1)
+        if(x2<x1 && y2<y1)
         { throw new IllegalArgumentException("Illegal Inputs for isHovering method call" +
                                              "your first number must be greater than your second \n" +
                                              "your third number must be greater than your fourth");}
